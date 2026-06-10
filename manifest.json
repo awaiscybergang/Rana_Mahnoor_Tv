@@ -1,7 +1,7 @@
 {
   "name": "Rana Mahnoor Live TV",
   "short_name": "Mahnoor TV",
-  "description": "Premium HD Live TV",
+  "description": "Premium HD Live TV App",
   "start_url": "/index.html",
   "display": "standalone",
   "theme_color": "#e50914",
