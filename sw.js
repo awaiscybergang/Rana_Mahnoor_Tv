@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mahnoor-tv-v1';
+const CACHE_NAME = 'mahnoor-tv-v2';
 const urlsToCache = [
   '/index.html',
   '/manifest.json'
@@ -17,5 +17,9 @@ self.addEventListener('fetch', event => {
 });
 
 self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.map(key => { if (key !== CACHE_NAME) return caches.delete(key); }))));
+  event.waitUntil(
+    caches.keys().then(keys => Promise.all(keys.map(key => {
+      if (key !== CACHE_NAME) return caches.delete(key);
+    })))
+  );
 });
